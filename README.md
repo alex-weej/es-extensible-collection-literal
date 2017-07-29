@@ -242,7 +242,7 @@ Map#{
 
 ### Why iterators?
 
-Iterators are a more fundamental abstraction than `Array`s. This avoids having to necessarily have an *N*-element `Array` coexist with an `N`-element collection during construction.
+Iterators are a more fundamental abstraction than `Array`s. This avoids having to necessarily have an *N*-element `Array` coexist with an *N*-element collection during construction.
 
 It also avoids placing any additional special burden on the `Array` type (it is already used for rest arguments, whereas argument spreading works in terms of arbitrary literals.)
 
