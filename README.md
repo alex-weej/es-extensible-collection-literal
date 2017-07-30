@@ -26,14 +26,14 @@ is equivalent to:
 
 ```js
 const favoriteFruit = Map[Symbol.mappingLiteral]([
-    [me, "banana"][Symbol.iterate](),
-    ["Alice", "kumquat"][Symbol.iterate](),
-    ["Ariana", "apple"][Symbol.iterate](),
-][Symbol.iterate]());
+    [me, "banana"][Symbol.iterator](),
+    ["Alice", "kumquat"][Symbol.iterator](),
+    ["Ariana", "apple"][Symbol.iterator](),
+][Symbol.iterator]());
 
 const innocentNumbers = IList[Symbol.sequenceLiteral]([
     4, 8, 15, 16, 23, 42
-][Symbol.iterate]());
+][Symbol.iterator]());
 ```
 
 This is compared to current collection construction idioms that either require `new` or ad-hoc API (e.g. static method `of`):
