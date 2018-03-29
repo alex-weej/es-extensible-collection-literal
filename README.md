@@ -75,7 +75,7 @@ In Python:
 In C++17:
 
 ```c++
-std::map{{1, "one"s}, {2, "two"s}, {3, "three"s}}
+std::map<int, std::string>{{1, "one"s}, {2, "two"s}, {3, "three"s}}
 ```
 
 The proposed ECMAScript syntax addition would allow for equivalent terseness, and fast failure at parse time:
@@ -244,7 +244,7 @@ Map#{
 
 Iterators are a more fundamental abstraction than `Array`s. This avoids having to necessarily have an *N*-element `Array` coexist with an *N*-element collection during construction.
 
-It also avoids placing any additional special burden on the `Array` type (it is already used for rest arguments, whereas argument spreading works in terms of arbitrary literals.)
+It also avoids placing any additional special burden on the `Array` type (it is already used for rest arguments, whereas argument spreading works in terms of arbitrary iterables.)
 
 
 ### Why extensible?
